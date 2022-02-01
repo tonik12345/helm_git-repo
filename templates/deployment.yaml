@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  namespace: tonia-training
+  labels:
+    app: my-helm
+  name: my-helm
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: my-helm
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: my-helm
+    spec:
+      containers:
+      - image: nginxinc/nginx-unprivileged
+        name: nginx
+        resources: {}
+status: {}

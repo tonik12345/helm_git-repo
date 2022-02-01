@@ -1,0 +1,22 @@
+apiVersion: v1
+entries:
+  my-helm:
+  - apiVersion: v1
+    appVersion: "1"
+    created: "2022-02-01T10:04:35.947685163Z"
+    description: my custom helm chart
+    digest: f21f1f00139954116b3496b9a3a2ae17617577e867004606505f43506cd0b87a
+    name: my-helm
+    urls:
+    - my-helm-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v1
+    appVersion: "1"
+    created: "2022-02-01T10:04:35.947980106Z"
+    description: my custom helm chart
+    digest: 0e6542fec22565f1acd3844b28722601239dc9c162c622d593301ffba94730ec
+    name: my-helm
+    urls:
+    - chartstorage/my-helm-0.2.0.tgz
+    version: 0.2.0
+generated: "2022-02-01T10:04:35.946679929Z"
